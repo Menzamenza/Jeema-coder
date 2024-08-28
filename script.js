@@ -36,8 +36,20 @@ class Tableau extends React.Component {
 
     // }
     addStudent = () => {
-        const { inputPrenom, inputNom, inputMail, inputTel, editingIndex, etudiants } = this.state;
-        const newEtudiant = { prenom: inputPrenom, nom: inputNom, mail: inputMail, tel: inputTel };
+        const { 
+            inputPrenom, 
+            inputNom, 
+            inputMail, 
+            inputTel, 
+            editingIndex, 
+            etudiants
+         } = this.state;
+        const newEtudiant = { 
+            prenom: inputPrenom, 
+            nom: inputNom, 
+            mail: inputMail, 
+            tel: inputTel 
+        };
 
         if (editingIndex !== null) {
             // Mise à jour d'un étudiant existant
